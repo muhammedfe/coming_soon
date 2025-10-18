@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sitemiz Yapım Aşamasında</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted: #cbd5e1;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #071026 0%, #0f1724 100%);
+      color:var(--muted);
+      padding:20px;
+    }
+    .card{
+      width:min(720px, 92vw);
+      background: rgba(255,255,255,0.03);
+      border-radius:18px;
+      padding:40px;
+      text-align:center;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+    }
+    .logo{
+      width:160px;
+      height:auto;
+      margin:0 auto 24px;
+      display:block;
+    }
+    h1{
+      margin:0 0 8px;
+      font-weight:600;
+      font-size:20px;
+      color:#e6eef8;
+    }
+    p{
+      margin:0;
+      color:#9fb0c8;
+      font-size:15px;
+    }
+    .footer{
+      margin-top:18px;
+      font-size:13px;
+      color:#7f98ad;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>Site Yapım Aşamasındadır</h1>
+    <p>Yakında burada olacağız. Sabırla beklemenizi rica ederiz.</p>
+    <div class="footer">© <span id="year"></span> Firma Adı</div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
